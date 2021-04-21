@@ -1,0 +1,58 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.openhab.binding.lightwaverf
+Bnd-LastModified: 1618999029115
+Bundle-Description: This project contains the official add-ons of open
+ HAB
+Bundle-Developers: openhab;email="info@openhab.org";name=openHAB;organ
+ ization=openHAB;organizationUrl="https://www.openHAB.org"
+Bundle-DocURL: https://github.com/openhab/infrastructure/org.openhab.a
+ ddons.reactor/org.openhab.addons.reactor.bundles/org.openhab.binding.
+ lightwaverf
+Bundle-License: "Eclipse Public License 2.0";link="https://www.eclipse
+ .org/legal/epl-2.0/"
+Bundle-ManifestVersion: 2
+Bundle-Name: openHAB Add-ons :: Bundles :: LightwaveRf Binding
+Bundle-SCM: url="https://github.com/openhab/openhab-addons/org.openhab
+ .addons.reactor.bundles/org.openhab.binding.lightwaverf",connection="
+ scm:git:https://github.com/openhab/openhab-addons.git/org.openhab.add
+ ons.reactor.bundles/org.openhab.binding.lightwaverf",developer-connec
+ tion="scm:git:https://github.com/openhab/openhab-addons.git/org.openh
+ ab.addons.reactor.bundles/org.openhab.binding.lightwaverf",tag=HEAD
+Bundle-SymbolicName: org.openhab.binding.lightwaverf
+Bundle-Vendor: openHAB.org
+Bundle-Version: 2.5.13.202104210957
+Created-By: 11.0.9 (Oracle Corporation)
+Import-Package: org.eclipse.smarthome.config.core,org.eclipse.smarthom
+ e.config.discovery,org.eclipse.smarthome.core.library.types,org.eclip
+ se.smarthome.core.thing,org.eclipse.smarthome.core.thing.binding,org.
+ eclipse.smarthome.core.types,org.eclipse.smarthome.io.net.http,com.go
+ ogle.gson;version="[2.8,3)",com.google.gson.annotations;version="[2.8
+ ,3)",org.eclipse.jetty.client;version="[9.3,10)",org.eclipse.jetty.cl
+ ient.api;version="[9.3,10)",org.eclipse.jetty.client.util;version="[9
+ .3,10)",org.eclipse.jetty.websocket.api;version="[9.3,10)",org.eclips
+ e.jetty.websocket.api.annotations;version="[9.3,10)",org.eclipse.jett
+ y.websocket.client;version="[9.3,10)",org.slf4j;version="[1.7,2)"
+Private-Package: ESH-INF.binding,ESH-INF.i18n,ESH-INF.thing,org.openha
+ b.binding.lightwaverf.internal,org.openhab.binding.lightwaverf.intern
+ al.commands,org.openhab.binding.lightwaverf.internal.config,org.openh
+ ab.binding.lightwaverf.internal.connections,org.openhab.binding.light
+ waverf.internal.discovery,org.openhab.binding.lightwaverf.internal.dt
+ o,org.openhab.binding.lightwaverf.internal.dto.api,org.openhab.bindin
+ g.lightwaverf.internal.handler,org.openhab.binding.lightwaverf.intern
+ al.listeners,org.openhab.binding.lightwaverf.internal.utilities
+Provide-Capability: osgi.service;objectClass:List<String>="org.eclipse
+ .smarthome.core.thing.binding.ThingHandlerFactory";uses:="org.eclipse
+ .smarthome.core.thing.binding",osgi.service;objectClass:List<String>=
+ "org.openhab.binding.lightwaverf.internal.discovery.LWDiscoveryServic
+ e";uses:="org.openhab.binding.lightwaverf.internal.discovery"
+Require-Capability: osgi.service;filter:="(objectClass=org.eclipse.sma
+ rthome.io.net.http.HttpClientFactory)";effective:=active,osgi.service
+ ;filter:="(objectClass=org.eclipse.smarthome.io.net.http.WebSocketFac
+ tory)";effective:=active,osgi.extender;filter:="(&(osgi.extender=osgi
+ .component)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(
+ osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/org.openhab.binding.lightwaverf.internal.L
+ WHandlerFactory.xml,OSGI-INF/org.openhab.binding.lightwaverf.internal
+ .discovery.LWDiscoveryService.xml
+Tool: Bnd-4.3.0.201909301554
+

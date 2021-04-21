@@ -1,0 +1,759 @@
+<html xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <title>Analysis Report</title><style type="text/css">
+					body {margin-left: 3%; font-size:10pt;font-family:Arial;color:#000000 ; }					
+					table.details tr th {font-size:10pt;font-family:Arial;font-weight:bold;background:#AC58FA}
+					table.details tr {font-size:10pt;font-family:Arial;font-weight:normal;background:#BEa1Fa}
+					table tbody	tr.alternate {background:#BAF4A7;}
+					table tbody tr.dark {background:#F4F4A7;}
+				</style></head>
+   <body>
+      <h2>Report
+         					 
+         					(2021-04-21+01:00;
+         					 10:56:19.323+01:00)
+         				
+      </h2>
+      <h3>Summary Messages</h3>
+      <table width="90%" border="0" class="details">
+         <tr>
+            <th align="left">category</th>
+            <th align="left">tool</th>
+            <th align="left">priority</th>
+            <th align="left">rule</th>
+            <th align="left">count</th>
+         </tr>
+         <tr>
+            <td colspan="5">bad practice</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>findbugs</td>
+            <td align="left">3</td>
+            <td> <a href="http://findbugs.sourceforge.net/bugDescriptions.html#SLF4J_LOGGER_SHOULD_BE_NON_STATIC">Logger should be non-static field (SLF4J)</a></td>
+            <td align="center">7</td>
+         </tr>
+         <tr>
+            <td colspan="5">correctness</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>findbugs</td>
+            <td align="left">1</td>
+            <td> <a href="http://findbugs.sourceforge.net/bugDescriptions.html#SLF4J_PLACE_HOLDER_MISMATCH">Count of placeholder is not equal to count of parameter (SLF4J)</a></td>
+            <td align="center">1</td>
+         </tr>
+         <tr>
+            <td colspan="5">style</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>ConstantNameCheck</td>
+            <td align="center">4</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>MemberNameCheck</td>
+            <td align="center">4</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>ModifierOrderCheck</td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>MethodNameCheck</td>
+            <td align="center">8</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>TodoCommentCheck</td>
+            <td align="center">13</td>
+         </tr>
+         <tr class="alternate">
+            <td></td>
+            <td>checkstyle</td>
+            <td align="left">3</td>
+            <td>LocalVariableNameCheck</td>
+            <td align="center">1</td>
+         </tr>
+         <tr class="dark">
+            <td colspan="4"></td>
+            <td align="center">39</td>
+         </tr>
+      </table>
+      <p></p>
+      <h3>Summary Files</h3>
+      <table width="90%" border="0" class="details">
+         <tr>
+            <th align="left" width="90pt">class file</th>
+            <th align="center" width="90pt">high</th>
+            <th align="center" width="90pt">medium</th>
+            <th align="center" width="90pt">low</th>
+            <th align="center" width="90pt">total</th>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.LightwaverfSmartCommandManager.java" title="org.openhab.binding.lightwaverf.internal.LightwaverfSmartCommandManager.java">org.openhab.binding.lightwaverf.internal.LightwaverfSmartCommandManager.java</a></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.connections.LightwaverfConnectReceiverThread.java" title="org.openhab.binding.lightwaverf.internal.connections.LightwaverfConnectReceiverThread.java">org.openhab.binding.lightwaverf.internal.connections.LightwaverfConnectReceiverThread.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.connections.LightwaverfConnectSenderThread.java" title="org.openhab.binding.lightwaverf.internal.connections.LightwaverfConnectSenderThread.java">org.openhab.binding.lightwaverf.internal.connections.LightwaverfConnectSenderThread.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+            <td align="center">
+               <div class="p3">2</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.dto.LightwaverfConnectResponse.java" title="org.openhab.binding.lightwaverf.internal.dto.LightwaverfConnectResponse.java">org.openhab.binding.lightwaverf.internal.dto.LightwaverfConnectResponse.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">10</div>
+            </td>
+            <td align="center">
+               <div class="p3">10</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.dto.LightwaverfSmartPing.java" title="org.openhab.binding.lightwaverf.internal.dto.LightwaverfSmartPing.java">org.openhab.binding.lightwaverf.internal.dto.LightwaverfSmartPing.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.dto.LightwaverfSmartRequest.java" title="org.openhab.binding.lightwaverf.internal.dto.LightwaverfSmartRequest.java">org.openhab.binding.lightwaverf.internal.dto.LightwaverfSmartRequest.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectAccountHandler.java" title="org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectAccountHandler.java">org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectAccountHandler.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectDimmerHandler.java" title="org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectDimmerHandler.java">org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectDimmerHandler.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectRelayHandler.java" title="org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectRelayHandler.java">org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectRelayHandler.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectSwitchHandler.java" title="org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectSwitchHandler.java">org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectSwitchHandler.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectTRVHandler.java" title="org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectTRVHandler.java">org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectTRVHandler.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+            <td align="center">
+               <div class="p3">4</div>
+            </td>
+         </tr>
+         <tr class="alternate">
+            <td><a href="#org.openhab.binding.lightwaverf.internal.utilities.GeneralMessageId.java" title="org.openhab.binding.lightwaverf.internal.utilities.GeneralMessageId.java">org.openhab.binding.lightwaverf.internal.utilities.GeneralMessageId.java</a></td>
+            <td align="center">
+               <div class="p1">0</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+            <td align="center">
+               <div class="p3">1</div>
+            </td>
+         </tr>
+         <tr class="dark">
+            <td></td>
+            <td align="center">
+               <div class="p1">1</div>
+            </td>
+            <td align="center">
+               <div class="p2">0</div>
+            </td>
+            <td align="center">
+               <div class="p3">38</div>
+            </td>
+            <td align="center">
+               <div class="p3">39</div>
+            </td>
+         </tr>
+      </table>
+      <p></p>
+      <h3>Details by Class</h3>
+      <table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.LightwaverfSmartCommandManager.java">org.openhab.binding.lightwaverf.internal.LightwaverfSmartCommandManager.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>1</td>
+            <td>140</td>
+            <td>correctness</td>
+            <td>Count of placeholder is not equal to count of parameter (SLF4J)</td>
+            <td>Count of placeholder(3) is not equal to count of parameter(4)</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>239</td>
+            <td>style</td>
+            <td>LocalVariableNameCheck</td>
+            <td>Name 'class_' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.connections.LightwaverfConnectReceiverThread.java">org.openhab.binding.lightwaverf.internal.connections.LightwaverfConnectReceiverThread.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>38</td>
+            <td>style</td>
+            <td>ConstantNameCheck</td>
+            <td>Name 'logger' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>3</td>
+            <td></td>
+            <td>bad practice</td>
+            <td>Logger should be non-static field (SLF4J)</td>
+            <td>
+               Logger should be non-static field. Change this field (logger) to non-static field.
+               
+            </td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.connections.LightwaverfConnectSenderThread.java">org.openhab.binding.lightwaverf.internal.connections.LightwaverfConnectSenderThread.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>61</td>
+            <td>style</td>
+            <td>ConstantNameCheck</td>
+            <td>Name 'logger' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>3</td>
+            <td></td>
+            <td>bad practice</td>
+            <td>Logger should be non-static field (SLF4J)</td>
+            <td>
+               Logger should be non-static field. Change this field (logger) to non-static field.
+               
+            </td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.dto.LightwaverfConnectResponse.java">org.openhab.binding.lightwaverf.internal.dto.LightwaverfConnectResponse.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>62</td>
+            <td>style</td>
+            <td>MemberNameCheck</td>
+            <td>Name '_long' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>83</td>
+            <td>style</td>
+            <td>MemberNameCheck</td>
+            <td>Name '_evns' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>110</td>
+            <td>style</td>
+            <td>MemberNameCheck</td>
+            <td>Name '_class' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>118</td>
+            <td>style</td>
+            <td>ModifierOrderCheck</td>
+            <td>'static' modifier out of order with the JLS suggestions.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>208</td>
+            <td>style</td>
+            <td>MethodNameCheck</td>
+            <td>Name 'get_long' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>212</td>
+            <td>style</td>
+            <td>MethodNameCheck</td>
+            <td>Name 'set_long' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>264</td>
+            <td>style</td>
+            <td>MethodNameCheck</td>
+            <td>Name 'get_evns' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>268</td>
+            <td>style</td>
+            <td>MethodNameCheck</td>
+            <td>Name 'set_evns' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>344</td>
+            <td>style</td>
+            <td>MethodNameCheck</td>
+            <td>Name 'get_class' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>348</td>
+            <td>style</td>
+            <td>MethodNameCheck</td>
+            <td>Name 'set_class' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.dto.LightwaverfSmartPing.java">org.openhab.binding.lightwaverf.internal.dto.LightwaverfSmartPing.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>91</td>
+            <td>style</td>
+            <td>MethodNameCheck</td>
+            <td>Name 'getClass_' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.dto.LightwaverfSmartRequest.java">org.openhab.binding.lightwaverf.internal.dto.LightwaverfSmartRequest.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>115</td>
+            <td>style</td>
+            <td>MethodNameCheck</td>
+            <td>Name 'getClass_' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectAccountHandler.java">org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectAccountHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>55</td>
+            <td>style</td>
+            <td>MemberNameCheck</td>
+            <td>Name 'TIMEOUT_FOR_OK_MESSAGES_MS' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>66</td>
+            <td>style</td>
+            <td>ConstantNameCheck</td>
+            <td>Name 'logger' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>102</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>3</td>
+            <td></td>
+            <td>bad practice</td>
+            <td>Logger should be non-static field (SLF4J)</td>
+            <td>
+               Logger should be non-static field. Change this field (logger) to non-static field.
+               
+            </td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectDimmerHandler.java">org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectDimmerHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>150</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>155</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>160</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>3</td>
+            <td></td>
+            <td>bad practice</td>
+            <td>Logger should be non-static field (SLF4J)</td>
+            <td>
+               Logger should be non-static field. Change this field (logger) to non-static field.
+               
+            </td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectRelayHandler.java">org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectRelayHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>145</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>150</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>155</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>3</td>
+            <td></td>
+            <td>bad practice</td>
+            <td>Logger should be non-static field (SLF4J)</td>
+            <td>
+               Logger should be non-static field. Change this field (logger) to non-static field.
+               
+            </td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectSwitchHandler.java">org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectSwitchHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>121</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>126</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>131</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>3</td>
+            <td></td>
+            <td>bad practice</td>
+            <td>Logger should be non-static field (SLF4J)</td>
+            <td>
+               Logger should be non-static field. Change this field (logger) to non-static field.
+               
+            </td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectTRVHandler.java">org.openhab.binding.lightwaverf.internal.handler.LightwaverfConnectTRVHandler.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>109</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>114</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>119</td>
+            <td>style</td>
+            <td>TodoCommentCheck</td>
+            <td>Comment matches to-do format '(TODO)|(FIXME)'.</td>
+         </tr>
+         <tr class="alternate">
+            <td>findbugs</td>
+            <td>3</td>
+            <td></td>
+            <td>bad practice</td>
+            <td>Logger should be non-static field (SLF4J)</td>
+            <td>
+               Logger should be non-static field. Change this field (logger) to non-static field.
+               
+            </td>
+         </tr>
+      </table><br><table width="90%" border="0" class="details">
+         <th align="left" colspan="6"><a name="org.openhab.binding.lightwaverf.internal.utilities.GeneralMessageId.java">org.openhab.binding.lightwaverf.internal.utilities.GeneralMessageId.java</a></th>
+         <tr>
+            <th align="left" width="80pt">tool</th>
+            <th align="left" width="50pt">priority</th>
+            <th align="left" width="30pt">line</th>
+            <th align="left" width="80pt">category</th>
+            <th align="left" width="380pt">rule</th>
+            <th align="left">message</th>
+         </tr>
+         <tr class="alternate">
+            <td>checkstyle</td>
+            <td>3</td>
+            <td>31</td>
+            <td>style</td>
+            <td>ConstantNameCheck</td>
+            <td>Name 'formatter' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.</td>
+         </tr>
+      </table><br></body>
+</html>

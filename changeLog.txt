@@ -1,0 +1,87 @@
+Version 3.1
+Add Response message listener to confirm commands sent
+
+Version 3.0
+Removed Polling
+Added Websocket functionality
+
+Version 2.1
+Added 3 Way Relay (LW821)
+Added Generation 1 Double Socket (LW260)
+Added Generation 1 TRV (LW922)
+
+Version 2.0
+***Polling Interval is now in milliseconds and is the delay between complete polls***
+Changed Polling method
+Added new error messages for lightwave server errors
+Fixed channel Add/remove bug
+Fixed incorrect powerCost value
+Various minor bug fixes
+
+Version 1.2.2
+Fixed long power values not working
+Added current date to time/duskTime/dawnTime
+
+Version 1.2.1
+Fixed decimal bug
+Changed format for energy power and cost to 8 decimal places
+
+Version 1.2.0
+Fixed polling not restarting issue
+various other minor bug fixes
+
+Version 1.1.1
+Changed energy usage from int to long to fix unable to store value error
+Added Account Parameter: electricityCost
+Added Channel energyCost
+Added Channel powerCost
+Added Channel energyReset
+Added Channel voltageReset (use with caution, only when the lightwave value is messed up)
+Added error logging for Message Failed return from the LightwaveRf servers
+
+
+Version 1.1.0
+Changed Polling Method
+Fixed Dimmer gui flicker
+Fixed RGB Color - now sets to nearest available colour (lightwave pre defined colours)
+
+Version 1.0.8
+Fixed 3/4 gang dimmer incorrect channel name
+added token refresh
+fixed linkplus date format
+
+Version 1.0.7
+Fixed bug with Update listener not reflecting the correct polling time
+Removed Update Listener additional Thread as was unstable
+Added synchronization lock for handle command - status will now stay in sync
+
+
+Version 1.0.6
+Battery Level Fix
+
+
+Version 1.0.5
+Minor bug fixes
+
+
+Version 1.0.4
+Disabled discovery for already added devices
+
+
+Version 1.0.3
+Fixed RGBColor brightness not supported
+
+
+Version 1.0.2
+Updated Readme
+Changed linkplus item types to correct types - see readme for channel types
+
+
+Version 1.0.1
+Fixed RGB Color Item to display / send the correct value
+Added http dependency
+Added properties to thing: Available Channels.  Lists all available channels on the thing. (helpful for adding new device types)
+Fixed Channel number in thing properties
+*To clear existing properties you will need to clear the cache
+
+
