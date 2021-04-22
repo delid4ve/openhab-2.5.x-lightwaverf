@@ -26,9 +26,9 @@ under the License.
     <copyright>&#169;2021 openHAB.org</copyright>
     <item>
       <title>File: 90,
-             Errors: 0,
+             Errors: 2,
              Warnings: 0,
-             Infos: 31
+             Infos: 32
       </title>
             <link>https://github.com/openhab/infrastructure/org.openhab.addons.reactor/org.openhab.addons.reactor.bundles/org.openhab.binding.lightwaverf/checkstyle.html</link>
       <description>
@@ -223,7 +223,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
               </tr>
                           <tr>
@@ -307,7 +307,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
               </tr>
                           <tr>
@@ -1239,7 +1239,7 @@ under the License.
                   <a href="https://github.com/openhab/infrastructure/org.openhab.addons.reactor/org.openhab.addons.reactor.bundles/org.openhab.binding.lightwaverf/checkstyle.html#src.main.java.org.openhab.binding.lightwaverf.internal.handler.LightwaverfSmartAccountHandler.java">src/main/java/org/openhab/binding/lightwaverf/internal/handler/LightwaverfSmartAccountHandler.java</a>
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   0

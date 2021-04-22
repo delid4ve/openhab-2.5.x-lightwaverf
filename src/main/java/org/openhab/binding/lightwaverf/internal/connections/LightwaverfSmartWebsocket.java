@@ -25,6 +25,7 @@ import org.eclipse.jetty.websocket.api.annotations.OnWebSocketMessage;
 import org.eclipse.jetty.websocket.api.annotations.WebSocket;
 import org.eclipse.jetty.websocket.client.ClientUpgradeRequest;
 import org.eclipse.jetty.websocket.client.WebSocketClient;
+import org.eclipse.smarthome.io.net.http.WebSocketFactory;
 import org.openhab.binding.lightwaverf.internal.listeners.LightwaverfSmartListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -49,9 +50,9 @@ public class LightwaverfSmartWebsocket {
 
     private @Nullable Session session;
 
-    public LightwaverfSmartWebsocket(WebSocketClient webSocketClient, LightwaverfSmartListener listener) {
-        this.webSocketClient = webSocketClient;
+    public LightwaverfSmartWebsocket(WebSocketFactory webSocketFactory, LightwaverfSmartListener listener) {
         this.listener = listener;
+        this.webSocketClient = webSocketFactory.createWebSocketClient("lightwaverf");
     }
 
     public Boolean getConnected() {
@@ -60,10 +61,21 @@ public class LightwaverfSmartWebsocket {
 
     public void setConnected(Boolean connected) {
         this.connected = connected;
+        if (!connected) {
+            Session session = this.session;
+            if (session != null) {
+                session.close();
+                this.session = null;
+            }
+        }
     }
 
     public synchronized void start() {
         try {
+            if (!webSocketClient.isStarted()) {
+                webSocketClient.start();
+                logger.debug("Started websocket client");
+            }
             closing = false;
             ClientUpgradeRequest request = new ClientUpgradeRequest();
             URI uri = new URI(url);
@@ -77,6 +89,7 @@ public class LightwaverfSmartWebsocket {
             webSocketClient.setMaxIdleTimeout(75000);
             webSocketClient.connect(this, uri, request);
         } catch (Exception e) {
+            setConnected(false);
             listener.websocketConnected(false);
         }
     }
@@ -84,26 +97,23 @@ public class LightwaverfSmartWebsocket {
     public void stop() {
         closing = true;
         logger.debug("Stopping websocket client");
-        Session session = this.session;
-        if (session != null) {
-            session.close();
-            this.session = null;
+        setConnected(false);
+        try {
+            webSocketClient.stop();
+        } catch (Exception e) {
+            logger.debug("Unable to stop websocketClient");
         }
+        webSocketClient.destroy();
     }
 
     @OnWebSocketConnect
     public void onConnect(Session session) {
         this.session = session;
-        this.connected = true;
+        setConnected(true);
         listener.websocketConnected(true);
         logger.debug("LightwaveRF - WebSocket Socket successfully connected to {}",
                 session.getRemoteAddress().getAddress());
     }
-
-    // @OnWebSocketFrame
-    // public void onFrame(Frame frame) {
-    // logger.debug("Frame received {}", frame.getPayload().toString());
-    // }
 
     @OnWebSocketMessage
     public void onMessage(String message) {
@@ -113,12 +123,7 @@ public class LightwaverfSmartWebsocket {
     @OnWebSocketClose
     public void onClose(int statusCode, String reason) {
         logger.warn("LightwaveRF - Closing a WebSocket due to {}", closing ? "binding shutting down" : reason);
-        Session session = this.session;
-        if (session != null) {
-            session.close();
-            this.session = null;
-        }
-        this.connected = false;
+        setConnected(false);
         listener.websocketConnected(false);
     }
 
@@ -150,8 +155,12 @@ public class LightwaverfSmartWebsocket {
 
                     @Override
                     public void writeFailed(@Nullable Throwable e) {
+                        String errorMessage = "unknown";
+                        if (e != null) {
+                            errorMessage = e.getMessage() != null ? e.getMessage() : "unknown";
+                        }
                         logger.warn("LightwaveRF - Websocket message sending failed: {} with reason: {}", message,
-                                e.getMessage());
+                                errorMessage);
                     }
                 });
             }

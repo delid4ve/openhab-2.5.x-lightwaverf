@@ -79,9 +79,11 @@ public class LWDiscoveryService extends AbstractDiscoveryService implements Thin
 
     @Override
     protected void startScan() {
-        // logger.debug("Start Scan");
-        if (this.scanTask != null) {
+        logger.debug("Start Scan");
+        ScheduledFuture<?> scanTask = this.scanTask;
+        if (scanTask != null) {
             scanTask.cancel(true);
+            this.scanTask = null;
         }
         this.scanTask = scheduler.schedule(() -> {
             try {
